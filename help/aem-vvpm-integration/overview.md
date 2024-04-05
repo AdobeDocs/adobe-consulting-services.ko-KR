@@ -2,7 +2,7 @@
 title: Veeva Vault 통합 개요
 description: Veeva Vault 통합 개요
 exl-id: 52cc7290-b7e1-4476-877f-48934e6daf68
-source-git-commit: 4d27e7ecca662b2082a18621becb0b8ec7735824
+source-git-commit: 005c738818ab622a342ddc3a94e94638e344d058
 workflow-type: tm+mt
 source-wordcount: '692'
 ht-degree: 0%
@@ -101,3 +101,4 @@ ht-degree: 0%
 ### Veeva Vault 프로모션 매트 지원 요청
 
 경우에 따라 Veeva Vault PromoMats 인스턴스 작동에 문제가 발생할 수 있습니다. 이 경우 Veeva Vault PromoMatts 관리자는 지원 티켓을 만들라는 안내를 받을 수 있습니다. [Veeva 지원](http://support.veeva.com/). Veeva 인스턴스의 상태는 로 이동하여 볼 수 있습니다. [베바 트러스트](http://trust.veeva.com/).
+

@@ -36,8 +36,8 @@ ht-degree: 1%
 * VVPM의 VVPM 시각적 주석을 AEM에 동기화할 수 없습니다.
 * 통합은 VVPM에서 AEM으로 콘텐츠를 가져오지 않습니다.
 * 메타데이터 유효성 검사가 지원되지 않습니다.
-* 문서 수는 Veeva 라이센스에 따라 제한됩니다. 다음을 참조하십시오 [라이선스 제한 사항](#veeva-license-limitations).
-* API 호출 수는 Veeva 라이센스에 따라 제한됩니다. 자세한 내용은 [API 제한 사항](https://developer.veevavault.com/docs/#what-are-rate-limits). 다음을 참조하십시오 [라이선스 제한 사항](#veeva-license-limitations).
+* 문서 수는 Veeva 라이센스에 따라 제한됩니다. [라이선스 제한](#veeva-license-limitations)을 참조하세요.
+* API 호출 수는 Veeva 라이센스에 따라 제한됩니다. 자세한 내용은 [API 제한](https://developer.veevavault.com/docs/#what-are-rate-limits)을 참조하십시오. [라이선스 제한](#veeva-license-limitations)을 참조하세요.
 
 ## Veeva 라이센스 제한 사항
 

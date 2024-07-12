@@ -25,7 +25,7 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->이 기능은 제품의 일부로 즉시 사용할 수 없습니다. 구현하려면 Adobe 컨설팅 유지 관리 계약이 필요합니다. 자세한 내용은 Adobe 담당자에게 문의하십시오.
+>이 기능은 제품의 일부로 즉시 사용할 수 없습니다. 구현하려면 Adobe Consulting 유지 관리 계약이 필요합니다. 자세한 내용은 Adobe 담당자에게 문의하십시오.
 >
 
 ## 원칙 및 기능
@@ -45,10 +45,10 @@ ht-degree: 0%
 
 통합은 어떤 작업을 수행합니까?
 
-* AEM 사이트 페이지, 에셋, 콘텐츠 조각 및 경험 조각을 VPM으로 보낼 수 있습니다. AEM 페이지, 컨텐츠 조각 및 경험 조각을 스크린샷 PDF 또는 이미지로 보낼 수 있습니다. AEM Assets 바이너리는 그대로 전송됩니다.
+* AEM 사이트 페이지, Assets, 콘텐츠 조각 및 경험 조각을 VPM으로 보낼 수 있습니다. AEM 페이지, 컨텐츠 조각 및 경험 조각을 스크린샷 PDF 또는 이미지로 보낼 수 있습니다. AEM Assets 바이너리는 그대로 전송됩니다.
 * AEM에서 VVPM으로 구성할 수 있는 선택한 메타데이터 요소의 수동 및 자동 동기화를 지원합니다.
 * VVPM에서 AEM으로 구성할 수 있는 선택한 메타데이터 요소의 수동 및 자동 동기화를 지원합니다.
-* VVPM에서 AEM 사이트 페이지, 에셋, 콘텐츠 조각 및 경험 조각 간의 관계를 지원하여 콘텐츠 관계를 자동화합니다.
+* VVPM에서 AEM 사이트 페이지, Assets, 콘텐츠 조각 및 경험 조각 간의 관계를 지원하여 콘텐츠 관계를 자동화합니다.
 * 여러 디바이스 유형에 대한 렌디션 생성을 지원합니다.
 
 >[!NOTE]
@@ -77,8 +77,8 @@ ht-degree: 0%
 
 순서도 세부 정보(위의 단계로 매핑):
 
-* **1단계** - Veeva Vault PromoMats 및 Adobe Experience Manager에 대한 라이센스가 이미 있거나 구매 중이라고 가정합니다.
-* **2단계** - 통합을 활용하려면 Adobe 컨설팅과의 유지 보수 계약을 요약한 새 판매 주문(SO)에 서명해야 합니다.
+* **1** - Veeva Vault PromoMats 및 Adobe Experience Manager에 대한 라이선스를 이미 보유했거나 구매 중인 것으로 간주됩니다.
+* **2단계** - 통합을 활용하려면 Adobe Consulting과의 유지 관리 계약에 대해 대략적으로 설명하는 새 판매 주문(SO)에 서명해야 합니다.
 * **3단계** - 통합 패키지를 설치하고 활성화하고 구성합니다.
 
 ## 지원
@@ -87,7 +87,7 @@ ht-degree: 0%
 
 ### 통합 또는 Adobe Experience Manager 지원 요청
 
-지원 티켓은 Adobe 고객 지원 센터에서 기록할 수 있습니다. Adobe Experience Cloud 관리자가에 로그온해야 합니다. [Adobe Admin Console](https://adminconsole.adobe.com/)에서 지원 탭을 클릭하고 사례를 만듭니다. 통합과 관련된 문제에 대해서는 다음 정보를 포함해야 합니다.
+지원 티켓은 Adobe 고객 지원 센터에서 기록할 수 있습니다. Adobe Experience Cloud 관리자가 [Adobe Admin Console](https://adminconsole.adobe.com/)에 로그온하고 지원 탭을 클릭한 다음 서비스 케이스를 만들어야 합니다. 통합과 관련된 문제에 대해서는 다음 정보를 포함해야 합니다.
 
 * **프로세스 제목**: `AEM - Veeva Vault Integration`
 * **프로세스 소유자**: `Data Engineering`
@@ -98,5 +98,5 @@ ht-degree: 0%
 
 ### Veeva Vault 프로모션 매트 지원 요청
 
-경우에 따라 Veeva Vault PromoMats 인스턴스 작동에 문제가 발생할 수 있습니다. 이 경우 Veeva Vault PromoMatts 관리자는 지원 티켓을 만들라는 안내를 받을 수 있습니다. [Veeva 지원](http://support.veeva.com/). Veeva 인스턴스의 상태는 로 이동하여 볼 수 있습니다. [베바 트러스트](http://trust.veeva.com/).
+경우에 따라 Veeva Vault PromoMats 인스턴스 작동에 문제가 발생할 수 있습니다. 이 경우 Veeva Vault PromoMatts 관리자가 [Veeva 지원](http://support.veeva.com/)을 통해 지원 티켓을 만들도록 요청할 수 있습니다. [Veeva Trust](http://trust.veeva.com/)(으)로 이동하여 Veeva 인스턴스의 상태를 볼 수 있습니다.
 

@@ -3,9 +3,10 @@ product: adobe experience manager
 solution: Experience Manager
 description: 컨설팅 Experience Manager 설명서
 type: Documentation
-git-repo: https://github.com/AdobeDocs/adobe-consulting-services.ko-KR
+git-repo: https://github.com/Adobe-Enterprise-Docs/adobe-consulting-services.ko-KR
 index: y
-source-git-commit: e2dac4b36fb94d72b72ef6f73a77e3f566539444
+hide: n
+source-git-commit: d36298f9c8abf2859e2a8fc9be92d2fcae8d60cf
 workflow-type: tm+mt
 source-wordcount: '81'
 ht-degree: 54%
@@ -39,4 +40,4 @@ ToCs
 * `title`
 * `description`
 
-메타데이터에 대한 추가 정보는 [내부 작성 안내서](https://experienceleague.adobe.com/docs/authoring-guide-exl/using/authoring/metadata.html).
+메타데이터에 대한 추가 정보는 [내부 제작 안내서](https://experienceleague.adobe.com/docs/authoring-guide-exl/using/authoring/metadata.html)에서 찾을 수 있습니다.

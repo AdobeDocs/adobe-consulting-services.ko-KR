@@ -2,10 +2,10 @@
 title: Veeva Vault 통합 사용
 description: Veeva Vault 통합 사용
 exl-id: efff7af1-eb25-4a1d-b7ef-52e3336970ff
-source-git-commit: 19949a48cfee0c17481e52f286a460e9d81d7ff0
+source-git-commit: b024e4295b5b37030c1524342832400c279c650a
 workflow-type: tm+mt
 source-wordcount: '1284'
-ht-degree: 0%
+ht-degree: 3%
 
 ---
 
@@ -48,7 +48,6 @@ POM에 커넥터를 포함하려면 다음 단계를 따르십시오. 사용자 
    >[!IMPORTANT]
    >
    >Cloud Manager를 사용하는 경우 안전한 접근 방법은 [암호로 보호된 Maven 저장소](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/create-application-project/setting-up-project.html?lang=ko#password-protected-maven-repositories)에 대해 여기에 있는 단계를 따르는 것입니다.
-   >
 
    ```
    <settings>
@@ -180,17 +179,17 @@ POM에 커넥터를 포함하려면 다음 단계를 따르십시오. 사용자 
 
 ![Adobe IO 탭](assets/adobe-io-tab.png)
 
-1. 필수. 온보딩 이메일에 제공된 PDF 이미지를 만들기 위한 Adobe IO 엔드포인트. (예: `https://my-namespace.adobeioruntime.net/api/v1/web/aem-veeva-serverless-0.0.2/trigger-action.json`)
+1. 필수. 온보딩 이메일에 제공된 PDF 이미지 생성을 위한 Adobe IO 엔드포인트. (예: `https://my-namespace.adobeioruntime.net/api/v1/web/aem-veeva-serverless-0.0.2/trigger-action.json`)
 2. 필수. 페이지 이미지 생성을 위한 작업 이름입니다. 이 값은 `aem-veeva-integration/get-image-async`이어야 합니다.
 3. 필수. HTML 이미지 생성을 위한 작업 이름입니다. 이 값은 `aem-veeva-integration/get-pdf-async-new`이어야 합니다.
 4. 필수. 온보딩 이메일에 제공된 생성 상태를 가져오기 위한 Adobe IO 엔드포인트.(예: `https://my-namespace.adobeioruntime.net/api/v1/web/aem-veeva-serverless-0.0.2/get-state-value`)
-5. 필수. Adobe IO에서 사용할 AEM 사용자 이름입니다. [AEM 사용자 만들기](#aem-user-creation)를 참조하십시오.
-6. 필수. Adobe IO에서 사용할 AEM 암호입니다. [AEM 사용자 만들기](#aem-user-creation)를 참조하십시오.
-7. 선택 사항입니다. 기본 시간 제한은 AIO 서비스가 응답 가져오기를 중지하는 지정된 시간까지 페이지가 응답할 수 있도록 하는 것입니다. 기본값은 `30000`입니다.
-8. 선택 사항입니다. 지연은 스크린샷을 찍기 전에 모든 이미지를 렌더링하기 위해 페이지가 200으로 응답한 이후입니다. 기본값은 `2000`입니다.
-9. 선택 사항입니다. 스크린샷/PDF 생성 URL은 구성된 값(초) 이후 만료됩니다.
-10. 선택 사항입니다. Adobe IO 스크린샷/PDF 생성 서비스가 비동기화됩니다. AEM 서비스는 AIO 상태 엔드포인트를 호출하여 스크린샷/PDF을 가져옵니다. 이 속성은 각 상태 호출 간의 일시 중지를 밀리초 단위로 결정합니다. 기본값은 `10000`입니다.
-11. 선택 사항입니다. 스크린샷/PDF 가져오기를 위한 Adobe IO에 대한 상태 호출의 최대 재시도 횟수. 기본값은 `10`입니다.
+5. 필수. Adobe IO에서 사용할 AEM 사용자 이름입니다. [AEM 사용자 만들기](#aem-user-creation)를 참조하세요.
+6. 필수. Adobe IO에서 사용할 AEM 암호입니다. [AEM 사용자 만들기](#aem-user-creation)를 참조하세요.
+7. 선택 사항. 기본 시간 제한은 AIO 서비스가 응답 가져오기를 중지하는 지정된 시간까지 페이지가 응답할 수 있도록 하는 것입니다. 기본값은 `30000`입니다.
+8. 선택 사항. 지연은 스크린샷을 찍기 전에 모든 이미지를 렌더링하기 위해 페이지가 200으로 응답한 이후입니다. 기본값은 `2000`입니다.
+9. 선택 사항. 스크린샷/PDF 생성 URL은 구성된 값(초) 이후 만료됩니다.
+10. 선택 사항. Adobe IO screenshot/PDF 생성 서비스가 비동기화되어 있습니다. AEM 서비스는 AIO 상태 엔드포인트를 호출하여 screenshot/PDF을 가져옵니다. 이 속성은 각 상태 호출 간의 일시 중지를 밀리초 단위로 결정합니다. 기본값은 `10000`입니다.
+11. 선택 사항. 스크린샷/PDF을 가져오기 위해 Adobe IO에 대한 상태 호출의 최대 재시도 횟수입니다. 기본값은 `10`입니다.
 
 #### 고급 탭
 
@@ -199,8 +198,8 @@ POM에 커넥터를 포함하려면 다음 단계를 따르십시오. 사용자 
 ![고급 탭](assets/advanced-tab.png)
 
 1. PDF/이미지 생성에 필요합니다. PDF/이미지를 만들 때 사용되는 파일 이름 패턴입니다. `{name}`을(를) 템플릿으로 만들 수 있습니다. (예: `{name}-screenshot`)
-2. 선택 사항입니다. 데스크탑 이외의 필요한 페이지 스크린샷에 대한 장치 유형입니다. 유효한 형식에는 `Tab (iPad)` 및 `Mobile (iPhone X)`이(가) 포함됩니다.
-3. 선택 사항입니다. 위 렌디션을 나타내는 Veeva의 렌디션 유형 값입니다. (예: `web_ready__c`)
+2. 선택 사항. 데스크탑 이외의 필요한 페이지 스크린샷에 대한 장치 유형입니다. 유효한 형식에는 `Tab (iPad)` 및 `Mobile (iPhone X)`이(가) 포함됩니다.
+3. 선택 사항. 위 렌디션을 나타내는 Veeva의 렌디션 유형 값입니다. (예: `web_ready__c`)
 4. PDF/이미지 생성에 필요합니다. 생성할 스크린샷 유형입니다. `PDF` 또는 `Image`입니다.
 5. PDF/이미지 생성에 필요합니다. 생성할 PDF 유형입니다. `Print CSS Based PDF` 또는 `Pixel Perfect Screenshot PDF`입니다.
 6. PDF/이미지 생성에 필요합니다. 생성할 이미지 유형입니다. `PNG` 또는 `JPEG`입니다.
@@ -208,13 +207,13 @@ POM에 커넥터를 포함하려면 다음 단계를 따르십시오. 사용자 
 8. 필수. 승인됨을 나타내는 상태 속성 값입니다. (예: `Approved for Distribution`)
 9. 필수. Veeva Vault 거부 트리거가 실행되면 실행할 워크플로우입니다.
 10. 필수. 거부됨/승인되지 않음 을 나타내는 상태 속성 값입니다. (예: `Rejected`)
-11. 선택 사항입니다. Veeva Vault의 문서 ID에 대한 속성 이름입니다. 기본값은 `id`입니다.
-12. 선택 사항입니다. Veeva Vault의 상태에 대한 속성 이름입니다. 기본값은 `status__v`입니다.
-13. 선택 사항입니다. 문서 수정 날짜의 속성 이름입니다. 기본값은 `version_modified_date__v`입니다.
-14. 선택 사항입니다. 문서 리소스 URL의 속성 이름입니다. 기본값은 `external_id__v`입니다. 이 필드가 이미 사용 중이면 Veeva에서 다른 필드를 만들고 여기에서 필드 이름을 채웁니다. 이 필드는 AEM 리소스 경로를 보유하기 위해 Veeva에서 사용됩니다. 이 단계는 자동화된 메타데이터 동기화에 필요합니다.
-15. 선택 사항입니다. Veeva Vault의 주요 버전 번호에 대한 속성 이름입니다. 기본값은 `major_version_number__v`입니다.
-16. 선택 사항입니다. Veeva Vault의 부 버전 번호에 대한 속성 이름입니다. 기본값은 `minor_version_number__v`입니다.
-17. 선택 사항입니다. Veeva Vault 관계 유형 값입니다. 페이지에 추가된 모든 에셋은 이 값을 기반으로 관련 에셋으로 표시됩니다. 기본값은 `supporting_document__c`입니다.
+11. 선택 사항. Veeva Vault의 문서 ID에 대한 속성 이름입니다. 기본값은 `id`입니다.
+12. 선택 사항. Veeva Vault의 상태에 대한 속성 이름입니다. 기본값은 `status__v`입니다.
+13. 선택 사항. 문서 수정 날짜의 속성 이름입니다. 기본값은 `version_modified_date__v`입니다.
+14. 선택 사항. 문서 리소스 URL의 속성 이름입니다. 기본값은 `external_id__v`입니다. 이 필드가 이미 사용 중이면 Veeva에서 다른 필드를 만들고 여기에서 필드 이름을 채웁니다. 이 필드는 AEM 리소스 경로를 보유하기 위해 Veeva에서 사용됩니다. 이 단계는 자동화된 메타데이터 동기화에 필요합니다.
+15. 선택 사항. Veeva Vault의 주요 버전 번호에 대한 속성 이름입니다. 기본값은 `major_version_number__v`입니다.
+16. 선택 사항. Veeva Vault의 부 버전 번호에 대한 속성 이름입니다. 기본값은 `minor_version_number__v`입니다.
+17. 선택 사항. Veeva Vault 관계 유형 값입니다. 페이지에 추가된 모든 에셋은 이 값을 기반으로 관련 에셋으로 표시됩니다. 기본값은 `supporting_document__c`입니다.
 
 #### 페이지 탭
 
@@ -227,7 +226,7 @@ a. AEM 속성 이름. AEM 속성에서 선택할 수 있습니다. (예: `jcr:ti
 b. 정확히 ( )에 입력한 Veeva 속성 이름이 Veeva에 존재합니다. (예: `name__v`)\
    c. 속성 유형. `Text` 또는 `Multiline Text`입니다.
 
-2. 필수. Veeva의 속성을 AEM에 매핑합니다.
+2. 필수. Veeva에서 AEM으로 속성을 매핑합니다.
 a. 정확히 ( )에 입력한 Veeva 속성 이름이 Veeva에 존재합니다. (예: `name__v`)
 b. AEM 속성 이름. AEM 속성에서 선택할 수 있습니다. (예: `jcr:title`)
 c. 속성 유형. `Text` 또는 `Multiline Text`입니다.
@@ -244,7 +243,7 @@ a. AEM 속성 이름. AEM 속성에서 선택할 수 있습니다. (예: `/jcr:c
 b. 정확히 ( )에 입력한 Veeva 속성 이름이 Veeva에 존재합니다. (예: `name__v`)
 c. 속성 유형. `Text` 또는 `Multiline Text`입니다.
 
-2. 필수. Veeva의 속성을 AEM에 매핑합니다.
+2. 필수. Veeva에서 AEM으로 속성을 매핑합니다.
 a. 정확히 ( )에 입력한 Veeva 속성 이름이 Veeva에 존재합니다. (예: `name__v`)
 b. AEM 속성 이름. AEM 속성에서 선택할 수 있습니다. (예: `/jcr:content/metadata/jcr:title`)
 c. 속성 유형. `Text` 또는 `Multiline Text`입니다.
@@ -260,9 +259,9 @@ AEM 6.5.5+를 사용하는 경우:
 * [AEM에서 사용자 만들기](https://experienceleague.adobe.com/docs/experience-manager-65/forms/administrator-help/setup-organize-users/adding-configuring-users.html?lang=ko&#create-a-user)
 * [AEM에서 사용자에게 권한을 추가](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html?lang=ko&#permissions-in-aem)
 
-AEM Cloud Service을 사용하는 경우:
+AEM 클라우드 서비스를 사용하는 경우:
 
-* [AEM Cloud Service으로 사용자 관리](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/aem-users-groups-and-permissions.html?lang=ko&#accessing)
+* [AEM Cloud Services를 사용하여 사용자 관리](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/aem-users-groups-and-permissions.html?lang=ko&#accessing)
 
 PDF/이미지로 변환되고 Veeva로 푸시될 컨텐츠에 대한 AEM 서비스 사용자에게 다음 권한이 필요합니다.
 
@@ -297,4 +296,3 @@ PDF/이미지로 변환되고 Veeva로 푸시될 컨텐츠에 대한 AEM 서비�
 >
 > 이러한 작업은 각 시스템에 대해 관리자 자격으로 수행해야 합니다.
 > 사용자를 만들고 권한을 설정할 때는 조직 보안 표준을 준수해야 합니다.
->

@@ -2,7 +2,7 @@
 title: Veeva Vault 통합 개요
 description: Veeva Vault 통합 개요
 exl-id: 52cc7290-b7e1-4476-877f-48934e6daf68
-source-git-commit: 2e47baa4a255c34b3ca0b8631650dd5d8960fea8
+source-git-commit: b024e4295b5b37030c1524342832400c279c650a
 workflow-type: tm+mt
 source-wordcount: '692'
 ht-degree: 0%
@@ -32,7 +32,7 @@ ht-degree: 0%
 
 이 통합은 다음과 같은 두 가지 주요 사용 사례를 지원하기 위해 설계되었습니다.
 
-1. 콘텐츠 승인 - AEM에서 새 콘텐츠를 만들거나 기존 콘텐츠를 편집한 경우, 콘텐츠가 생명 과학에 대한 의료, 법률, 규정(MLR) 승인 프로세스를 지원하는 VPM에서 사용하도록 승인되어야 합니다.
+1. 컨텐츠 승인 - AEM에서 새 컨텐츠를 만들거나 기존 컨텐츠를 편집한 경우 해당 컨텐츠를 생명 과학에 대한 의료, 법률, 규정(MLR) 승인 프로세스를 지원하는 VPM에서 사용하도록 승인해야 합니다.
 1. 컨텐츠 관리 - AEM에서 시작된 문서를 위해 AEM에서 생성된 디지털 전술(예: 이메일, 프레젠테이션, 웹 사이트)과 해당 요소(예: 로고, 사진, 그래픽) 간의 관계를 프로모션에서 설정하여 자산 활용에 대한 가시성을 제공합니다.
 
 이점은 다음과 같습니다.
@@ -45,7 +45,7 @@ ht-degree: 0%
 
 통합은 어떤 작업을 수행합니까?
 
-* AEM 사이트 페이지, Assets, 콘텐츠 조각 및 경험 조각을 VPM으로 보낼 수 있습니다. AEM 페이지, 컨텐츠 조각 및 경험 조각을 스크린샷 PDF 또는 이미지로 보낼 수 있습니다. AEM Assets 바이너리는 그대로 전송됩니다.
+* AEM 사이트 페이지, Assets, 콘텐츠 조각 및 경험 조각을 VPM으로 보낼 수 있습니다. AEM 페이지, 콘텐츠 조각 및 경험 조각을 스크린샷 PDF 또는 이미지로 보낼 수 있습니다. AEM Assets 바이너리는 그대로 전송됩니다.
 * AEM에서 VVPM으로 구성할 수 있는 선택한 메타데이터 요소의 수동 및 자동 동기화를 지원합니다.
 * VVPM에서 AEM으로 구성할 수 있는 선택한 메타데이터 요소의 수동 및 자동 동기화를 지원합니다.
 * VVPM에서 AEM 사이트 페이지, Assets, 콘텐츠 조각 및 경험 조각 간의 관계를 지원하여 콘텐츠 관계를 자동화합니다.
@@ -98,5 +98,4 @@ ht-degree: 0%
 
 ### Veeva Vault 프로모션 매트 지원 요청
 
-경우에 따라 Veeva Vault PromoMats 인스턴스 작동에 문제가 발생할 수 있습니다. 이 경우 Veeva Vault PromoMatts 관리자가 [Veeva 지원](http://support.veeva.com/)을 통해 지원 티켓을 만들도록 요청할 수 있습니다. [Veeva Trust](http://trust.veeva.com/)(으)로 이동하여 Veeva 인스턴스의 상태를 볼 수 있습니다.
-
+경우에 따라 Veeva Vault PromoMats 인스턴스 작동에 문제가 발생할 수 있습니다. 이 경우 Veeva Vault PromoMatts 관리자가 [Veeva 지원](http://support.veeva.com/)을 통해 지원 티켓을 만들도록 요청할 수 있습니다. [Veeva Trust](http://trust.veeva.com/)&#x200B;(으)로 이동하여 Veeva 인스턴스의 상태를 볼 수 있습니다.

@@ -2,10 +2,10 @@
 title: Veeva Vault 통합 FAQ
 description: Veeva Vault 통합 FAQ
 exl-id: c308ebb3-7881-4094-9f35-c67a96fb5ab1
-source-git-commit: e4a5e55ac9b79a8de7dfa8ddd3d0ad99560917b8
+source-git-commit: b024e4295b5b37030c1524342832400c279c650a
 workflow-type: tm+mt
 source-wordcount: '322'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -17,7 +17,7 @@ Veeva Portal의 콘텐츠 유형(예: 프로모션)에 따라 메타데이터를
 
 **통합에서 Veeva 연결 문서를 지원합니까? 그렇지 않으면 어떤 관계 유형이 지원됩니까?**
 
-아니. [Veeva 설명서](https://vaulthelp2.vod309.com/wordpress/admin-user-help/documents-admin-user-help/about-document-relationships/)를 참조하세요. 연결된 문서(참조 관계 유형)는 특수한 자격 증명 모음 동작이 있으므로 API를 통해 만들거나 삭제할 수 없는 표준 관계 유형 중 하나입니다. 이 목록에 없는 구성 요소, 지원 문서 등은 AEM Veeva Cloud 구성을 통해 구성할 수 있어야 합니다.
+아니요. [Veeva 설명서](https://vaulthelp2.vod309.com/wordpress/admin-user-help/documents-admin-user-help/about-document-relationships/)를 참조하세요. 연결된 문서(참조 관계 유형)는 특수한 자격 증명 모음 동작이 있으므로 API를 통해 만들거나 삭제할 수 없는 표준 관계 유형 중 하나입니다. 이 목록에 없는 구성 요소, 지원 문서 등은 AEM Veeva Cloud 구성을 통해 구성할 수 있어야 합니다.
 
 **통합에서 AEM 모듈식 콘텐츠를 지원합니까?**
 
@@ -29,7 +29,7 @@ Veeva Portal의 콘텐츠 유형(예: 프로모션)에 따라 메타데이터를
 
 **통합에서 Veeva 시각적 주석을 AEM에 동기화합니까?**
 
-아뇨, 지금은 아니에요. 시각적 주석은 API를 PDF으로 통해서만 액세스할 수 있습니다.
+아뇨, 지금은 아니에요. 시각적 주석은 API as a PDF을 통해서만 액세스할 수 있습니다.
 
 **통합에서 동기화된 VVPM 문서에 대한 권한을 어떻게 설정합니까?**
 
@@ -37,8 +37,8 @@ Veeva Portal의 콘텐츠 유형(예: 프로모션)에 따라 메타데이터를
 
 **통합에서 여러 VVPM 인스턴스를 지원합니까?**
 
-통합에서는 여러 Veeva 끝점을 하나의 AEM 인스턴스에서 구성할 수 있는 클라우드 구성 접근 방식을 사용합니다.
+통합에서는 하나의 AEM 인스턴스에서 여러 Veeva 끝점을 구성할 수 있는 클라우드 구성 접근 방식을 사용합니다.
 
 **통합에서 AEM 게시를 지원합니까?**
 
-아니요. 이 통합은 AEM 작성자에서만 작동합니다. 콘텐츠가 게시되기 전에 MLR 검토 주기를 용이하게 하기 위한 것입니다.
+아니요. 이 통합은 AEM 작성자와만 작동합니다. 콘텐츠가 게시되기 전에 MLR 검토 주기를 용이하게 하기 위한 것입니다.

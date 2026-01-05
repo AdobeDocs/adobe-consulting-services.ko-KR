@@ -2,7 +2,7 @@
 title: Veeva Vault 통합 알림
 description: Veeva Vault 통합 알림
 exl-id: 1a188671-d123-4475-a607-65743ba0dadd
-source-git-commit: 07eab1e439626bd3bb3416c9e7d0c1666927a7aa
+source-git-commit: b024e4295b5b37030c1524342832400c279c650a
 workflow-type: tm+mt
 source-wordcount: '254'
 ht-degree: 1%
@@ -31,7 +31,7 @@ ht-degree: 1%
 이 통합을 사용할 때는 다음 제한 사항을 고려하십시오.
 
 * 메타데이터 동기화 시 &quot;Text&quot; 및 &quot;Multiline Text&quot; 데이터 유형만 지원됩니다.
-* 통합은 AEM 모듈식 콘텐츠(콘텐츠 조각 및 경험 조각)를 지원하지만 VVPM 모듈식 콘텐츠는 지원하지 않습니다.
+* 이 통합은 AEM 모듈식 콘텐츠(콘텐츠 조각 및 경험 조각)를 지원하지만 VVPM 모듈식 콘텐츠는 지원하지 않습니다.
 * VVPM 연결 문서는 지원되지 않습니다.
 * VVPM의 VVPM 시각적 주석을 AEM에 동기화할 수 없습니다.
 * 통합은 VVPM에서 AEM으로 콘텐츠를 가져오지 않습니다.
@@ -44,3 +44,4 @@ ht-degree: 1%
 VVPM 일반 설정으로 이동하여 인스턴스 제한을 모니터링할 수 있습니다.
 
 ![Veeva 제한](assets/veeva-limits.png)
+

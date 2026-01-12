@@ -2,7 +2,7 @@
 title: Veeva Vault 통합 사용
 description: Veeva Vault 통합 사용
 exl-id: efff7af1-eb25-4a1d-b7ef-52e3336970ff
-source-git-commit: b024e4295b5b37030c1524342832400c279c650a
+source-git-commit: b4261448e34cdcee9c28410a9d3cd8dbcc9212fa
 workflow-type: tm+mt
 source-wordcount: '1284'
 ht-degree: 3%
@@ -271,7 +271,6 @@ PDF/이미지로 변환되고 Veeva로 푸시될 컨텐츠에 대한 AEM 서비�
 >
 > 이러한 작업은 각 시스템에 대해 관리자 자격으로 수행해야 합니다.
 > 사용자를 만들고 권한을 설정할 때는 조직 보안 표준을 준수해야 합니다.
->
 
 #### 사용자 생성 정보
 
@@ -281,7 +280,7 @@ PDF/이미지로 변환되고 Veeva로 푸시될 컨텐츠에 대한 AEM 서비�
 
    ![Veeva 사용자로 이동](assets/veeva-user-navigate.png)
 
-2. 필요한 입력을 입력합니다. 가장 간단한 설정은 `License Type`을(를) `Full User`(으)로 설정하고 `Security Profile`을(를) `Vault Owner`(으)로 설정하는 것입니다. 완료되면 저장합니다.
+1. 필요한 입력을 입력합니다. 가장 간단한 설정은 `License Type`을(를) `Full User`(으)로 설정하고 `Security Profile`을(를) `Vault Owner`(으)로 설정하는 것입니다. 완료되면 저장합니다.
 
    ![Veeva 사용자 만들기](assets/veeva-user-create.png)
 

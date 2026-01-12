@@ -2,7 +2,7 @@
 title: Veeva Vault 통합 알림
 description: Veeva Vault 통합 알림
 exl-id: 1a188671-d123-4475-a607-65743ba0dadd
-source-git-commit: b024e4295b5b37030c1524342832400c279c650a
+source-git-commit: b4261448e34cdcee9c28410a9d3cd8dbcc9212fa
 workflow-type: tm+mt
 source-wordcount: '254'
 ht-degree: 1%
@@ -44,4 +44,3 @@ ht-degree: 1%
 VVPM 일반 설정으로 이동하여 인스턴스 제한을 모니터링할 수 있습니다.
 
 ![Veeva 제한](assets/veeva-limits.png)
-

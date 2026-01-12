@@ -2,7 +2,7 @@
 title: Veeva Vault 통합 사용
 description: Veeva Vault 통합 사용
 exl-id: efff7af1-eb25-4a1d-b7ef-52e3336970ff
-source-git-commit: b024e4295b5b37030c1524342832400c279c650a
+source-git-commit: b4261448e34cdcee9c28410a9d3cd8dbcc9212fa
 workflow-type: tm+mt
 source-wordcount: '1284'
 ht-degree: 3%
@@ -37,7 +37,7 @@ ht-degree: 3%
 
 #### 패키지 설치
 
-패키지를 설치하려면 온보딩 이메일에 제공된 링크로 패키지를 다운로드합니다. [AEM 패키지 설치에 대한 자세한 지침은 여기를 클릭하여 확인할 수 있습니다.](https://experienceleague.adobe.com/docs/experience-manager-64/administering/contentmanagement/package-manager.html?lang=ko&#installing-packages)
+패키지를 설치하려면 온보딩 이메일에 제공된 링크로 패키지를 다운로드합니다. [AEM 패키지 설치에 대한 자세한 지침은 여기를 클릭하여 확인할 수 있습니다.](https://experienceleague.adobe.com/docs/experience-manager-64/administering/contentmanagement/package-manager.html?#installing-packages)
 
 #### POM 설치
 
@@ -47,7 +47,7 @@ POM에 커넥터를 포함하려면 다음 단계를 따르십시오. 사용자 
 
    >[!IMPORTANT]
    >
-   >Cloud Manager를 사용하는 경우 안전한 접근 방법은 [암호로 보호된 Maven 저장소](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/create-application-project/setting-up-project.html?lang=ko#password-protected-maven-repositories)에 대해 여기에 있는 단계를 따르는 것입니다.
+   >Cloud Manager를 사용하는 경우 안전한 접근 방법은 [암호로 보호된 Maven 저장소](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/create-application-project/setting-up-project.html?lang=en#password-protected-maven-repositories)에 대해 여기에 있는 단계를 따르는 것입니다.
 
    ```
    <settings>
@@ -256,12 +256,12 @@ PDF/이미지를 생성하는 동안 AEM에서 페이지를 가져오려면 AEM 
 
 AEM 6.5.5+를 사용하는 경우:
 
-* [AEM에서 사용자 만들기](https://experienceleague.adobe.com/docs/experience-manager-65/forms/administrator-help/setup-organize-users/adding-configuring-users.html?lang=ko&#create-a-user)
-* [AEM에서 사용자에게 권한을 추가](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html?lang=ko&#permissions-in-aem)
+* [AEM에서 사용자 만들기](https://experienceleague.adobe.com/docs/experience-manager-65/forms/administrator-help/setup-organize-users/adding-configuring-users.html?#create-a-user)
+* [AEM에서 사용자에게 권한을 추가](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html?#permissions-in-aem)
 
 AEM 클라우드 서비스를 사용하는 경우:
 
-* [AEM Cloud Services를 사용하여 사용자 관리](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/aem-users-groups-and-permissions.html?lang=ko&#accessing)
+* [AEM Cloud Services를 사용하여 사용자 관리](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/aem-users-groups-and-permissions.html?#accessing)
 
 PDF/이미지로 변환되고 Veeva로 푸시될 컨텐츠에 대한 AEM 서비스 사용자에게 다음 권한이 필요합니다.
 
@@ -271,7 +271,6 @@ PDF/이미지로 변환되고 Veeva로 푸시될 컨텐츠에 대한 AEM 서비�
 >
 > 이러한 작업은 각 시스템에 대해 관리자 자격으로 수행해야 합니다.
 > 사용자를 만들고 권한을 설정할 때는 조직 보안 표준을 준수해야 합니다.
->
 
 #### 사용자 생성 정보
 
@@ -281,7 +280,7 @@ PDF/이미지로 변환되고 Veeva로 푸시될 컨텐츠에 대한 AEM 서비�
 
    ![Veeva 사용자로 이동](assets/veeva-user-navigate.png)
 
-2. 필요한 입력을 입력합니다. 가장 간단한 설정은 `License Type`을(를) `Full User`(으)로 설정하고 `Security Profile`을(를) `Vault Owner`(으)로 설정하는 것입니다. 완료되면 저장합니다.
+1. 필요한 입력을 입력합니다. 가장 간단한 설정은 `License Type`을(를) `Full User`(으)로 설정하고 `Security Profile`을(를) `Vault Owner`(으)로 설정하는 것입니다. 완료되면 저장합니다.
 
    ![Veeva 사용자 만들기](assets/veeva-user-create.png)
 

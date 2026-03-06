@@ -3,13 +3,12 @@ product: adobe experience manager
 solution: Experience Manager
 description: 컨설팅 Experience Manager 설명서
 type: Documentation
-git-repo: https://github.com/Adobe-Enterprise-Docs/adobe-consulting-services.ko-KR
-index: y
-author: Anon
-source-git-commit: ac36c3ae49021c2b66234c8664df0969995aba62
+git-repo: https://github.com/AdobeDocs/adobe-consulting-services.en
+index: true
+source-git-commit: f491b48a151904f13becc146beab52600c9cef46
 workflow-type: tm+mt
-source-wordcount: '81'
-ht-degree: 54%
+source-wordcount: '94'
+ht-degree: 2%
 
 ---
 
@@ -19,7 +18,7 @@ ht-degree: 54%
 GitHub 제작 시스템의 메타데이터는 계층적이며 다음과 같이 증가하는 선례 수준으로 정의됩니다.
 
 1. metadata.md
-1. ToC
+1. 종료 날짜
 1. 문서
 
 metadata.md 파일에 정의된 메타데이터는 전체 리포지토리에 적용되지만 ToC 및 문서 수준에서 재정의될 수 있습니다. 메타데이터 재정의는 가능한 한 낮은 수준에서 수행해야 합니다.
@@ -30,7 +29,7 @@ metadata.md
 * `git-repo`
 * `index: y`
 
-ToCs
+Tocs
 
 * `sub-product`
 * `user-guide-title`

@@ -2,13 +2,14 @@
 title: Veeva Vault 통합 사용
 description: Veeva Vault 통합 사용
 exl-id: efff7af1-eb25-4a1d-b7ef-52e3336970ff
-source-git-commit: b4261448e34cdcee9c28410a9d3cd8dbcc9212fa
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+source-git-commit: 02aa1622ee171cd56ec9cdeb6bdef04b5d5464b5
 workflow-type: tm+mt
-source-wordcount: '1284'
-ht-degree: 3%
-
+source-wordcount: '1364'
+ht-degree: 7%
 ---
-
 # 통합 사용
 
 ## 연습
@@ -37,7 +38,7 @@ ht-degree: 3%
 
 #### 패키지 설치
 
-패키지를 설치하려면 온보딩 이메일에 제공된 링크로 패키지를 다운로드합니다. [AEM 패키지 설치에 대한 자세한 지침은 여기를 클릭하여 확인할 수 있습니다.](https://experienceleague.adobe.com/docs/experience-manager-64/administering/contentmanagement/package-manager.html?lang=ko&#installing-packages)
+패키지를 설치하려면 온보딩 이메일에 제공된 링크로 패키지를 다운로드합니다. [AEM 패키지 설치에 대한 자세한 지침은 여기를 클릭하여 확인할 수 있습니다.](https://experienceleague.adobe.com/docs/experience-manager-64/administering/contentmanagement/package-manager.html?#installing-packages)
 
 #### POM 설치
 
@@ -47,7 +48,7 @@ POM에 커넥터를 포함하려면 다음 단계를 따르십시오. 사용자 
 
    >[!IMPORTANT]
    >
-   >Cloud Manager를 사용하는 경우 안전한 접근 방법은 [암호로 보호된 Maven 저장소](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/create-application-project/setting-up-project.html?lang=ko#password-protected-maven-repositories)에 대해 여기에 있는 단계를 따르는 것입니다.
+   >Cloud Manager를 사용하는 경우 안전한 접근 방법은 [암호로 보호된 Maven 저장소](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/create-application-project/setting-up-project.html?lang=en#password-protected-maven-repositories)에 대해 여기에 있는 단계를 따르는 것입니다.
 
    ```
    <settings>
@@ -167,9 +168,9 @@ POM에 커넥터를 포함하려면 다음 단계를 따르십시오. 사용자 
 
 ![구성 탭](assets/configuration-tab.png)
 
-1. 필수. Veeva Vault 커넥터 구성 제목 이는 임의의 값이 될 수 있습니다. (예: `Veeva Vault Configuration`)
+1. 필수. Veeva Vault 커넥터 구성 제목 이는 임의의 값이 될 수 있습니다. (e.g. `Veeva Vault Configuration`)
 2. 필수. Veeva 인스턴스의 도메인 URL(예: `https://my-instance.veevavault.com/`)
-3. 필수. Veeva Vault API를 호출하는 데 필요한 ClientID. 이 값은 임의의 값이 될 수 있으며 대부분 디버깅에 사용됩니다. (예: `adobe-aem-vvtechpartner`)
+3. 필수. Veeva Vault API를 호출하는 데 필요한 ClientID. 이 값은 임의의 값이 될 수 있으며 대부분 디버깅에 사용됩니다. (e.g. `adobe-aem-vvtechpartner`)
 4. 필수. Veeva Vault 사용자 이름. [Veeva 사용자 만들기](#veeva-user-creation)를 참조하십시오.
 5. 필수. Veeva Vault 암호입니다. [Veeva 사용자 만들기](#veeva-user-creation)를 참조하십시오.
 
@@ -179,10 +180,10 @@ POM에 커넥터를 포함하려면 다음 단계를 따르십시오. 사용자 
 
 ![Adobe IO 탭](assets/adobe-io-tab.png)
 
-1. 필수. 온보딩 이메일에 제공된 PDF 이미지 생성을 위한 Adobe IO 엔드포인트. (예: `https://my-namespace.adobeioruntime.net/api/v1/web/aem-veeva-serverless-0.0.2/trigger-action.json`)
+1. 필수. 온보딩 이메일에 제공된 PDF 이미지 생성을 위한 Adobe IO 엔드포인트. (e.g. `https://my-namespace.adobeioruntime.net/api/v1/web/aem-veeva-serverless-0.0.2/trigger-action.json`)
 2. 필수. 페이지 이미지 생성을 위한 작업 이름입니다. 이 값은 `aem-veeva-integration/get-image-async`이어야 합니다.
 3. 필수. HTML 이미지 생성을 위한 작업 이름입니다. 이 값은 `aem-veeva-integration/get-pdf-async-new`이어야 합니다.
-4. 필수. 온보딩 이메일에 제공된 생성 상태를 가져오기 위한 Adobe IO 엔드포인트.(예: `https://my-namespace.adobeioruntime.net/api/v1/web/aem-veeva-serverless-0.0.2/get-state-value`)
+4. 필수. 온보딩 전자 메일에 제공된 생성 상태를 가져오기 위한 Adobe IO 끝점입니다(예: `https://my-namespace.adobeioruntime.net/api/v1/web/aem-veeva-serverless-0.0.2/get-state-value`).
 5. 필수. Adobe IO에서 사용할 AEM 사용자 이름입니다. [AEM 사용자 만들기](#aem-user-creation)를 참조하세요.
 6. 필수. Adobe IO에서 사용할 AEM 암호입니다. [AEM 사용자 만들기](#aem-user-creation)를 참조하세요.
 7. 선택 사항. 기본 시간 제한은 AIO 서비스가 응답 가져오기를 중지하는 지정된 시간까지 페이지가 응답할 수 있도록 하는 것입니다. 기본값은 `30000`입니다.
@@ -197,16 +198,16 @@ POM에 커넥터를 포함하려면 다음 단계를 따르십시오. 사용자 
 
 ![고급 탭](assets/advanced-tab.png)
 
-1. PDF/이미지 생성에 필요합니다. PDF/이미지를 만들 때 사용되는 파일 이름 패턴입니다. `{name}`을(를) 템플릿으로 만들 수 있습니다. (예: `{name}-screenshot`)
+1. PDF/이미지 생성에 필요합니다. PDF/이미지를 만들 때 사용되는 파일 이름 패턴입니다. `{name}`을(를) 템플릿으로 만들 수 있습니다. (e.g. `{name}-screenshot`)
 2. 선택 사항. 데스크탑 이외의 필요한 페이지 스크린샷에 대한 장치 유형입니다. 유효한 형식에는 `Tab (iPad)` 및 `Mobile (iPhone X)`이(가) 포함됩니다.
-3. 선택 사항. 위 렌디션을 나타내는 Veeva의 렌디션 유형 값입니다. (예: `web_ready__c`)
+3. 선택 사항. 위 렌디션을 나타내는 Veeva의 렌디션 유형 값입니다. (e.g. `web_ready__c`)
 4. PDF/이미지 생성에 필요합니다. 생성할 스크린샷 유형입니다. `PDF` 또는 `Image`입니다.
 5. PDF/이미지 생성에 필요합니다. 생성할 PDF 유형입니다. `Print CSS Based PDF` 또는 `Pixel Perfect Screenshot PDF`입니다.
 6. PDF/이미지 생성에 필요합니다. 생성할 이미지 유형입니다. `PNG` 또는 `JPEG`입니다.
 7. 필수. Veeva Vault 승인 트리거가 실행되면 실행할 워크플로우입니다.
-8. 필수. 승인됨을 나타내는 상태 속성 값입니다. (예: `Approved for Distribution`)
+8. 필수. 승인됨을 나타내는 상태 속성 값입니다. (e.g. `Approved for Distribution`)
 9. 필수. Veeva Vault 거부 트리거가 실행되면 실행할 워크플로우입니다.
-10. 필수. 거부됨/승인되지 않음 을 나타내는 상태 속성 값입니다. (예: `Rejected`)
+10. 필수. 거부됨/승인되지 않음 을 나타내는 상태 속성 값입니다. (e.g. `Rejected`)
 11. 선택 사항. Veeva Vault의 문서 ID에 대한 속성 이름입니다. 기본값은 `id`입니다.
 12. 선택 사항. Veeva Vault의 상태에 대한 속성 이름입니다. 기본값은 `status__v`입니다.
 13. 선택 사항. 문서 수정 날짜의 속성 이름입니다. 기본값은 `version_modified_date__v`입니다.
@@ -222,13 +223,13 @@ POM에 커넥터를 포함하려면 다음 단계를 따르십시오. 사용자 
 ![페이지 탭](assets/page-tab.png)
 
 1. 필수. AEM에서 Veeva로 속성을 매핑합니다.
-a. AEM 속성 이름. AEM 속성에서 선택할 수 있습니다. (예: `jcr:title`) `{name}`을(를) 템플릿화할 수 있습니다.
-b. 정확히 ( )에 입력한 Veeva 속성 이름이 Veeva에 존재합니다. (예: `name__v`)\
+a. AEM 속성 이름입니다. AEM 속성에서 선택할 수 있습니다. (예: `jcr:title`) `{name}`을(를) 템플릿화할 수 있습니다.
+b. 에 정확히 입력한 Veeva 속성 이름이 Veeva에 존재합니다. (e.g. `name__v`)\
    c. 속성 유형. `Text` 또는 `Multiline Text`입니다.
 
 2. 필수. Veeva에서 AEM으로 속성을 매핑합니다.
-a. 정확히 ( )에 입력한 Veeva 속성 이름이 Veeva에 존재합니다. (예: `name__v`)
-b. AEM 속성 이름. AEM 속성에서 선택할 수 있습니다. (예: `jcr:title`)
+a. 에 정확히 입력한 Veeva 속성 이름이 Veeva에 존재합니다. (e.g. `name__v`)
+b. AEM 속성 이름입니다. AEM 속성에서 선택할 수 있습니다. (e.g. `jcr:title`)
 c. 속성 유형. `Text` 또는 `Multiline Text`입니다.
 
 
@@ -239,13 +240,13 @@ c. 속성 유형. `Text` 또는 `Multiline Text`입니다.
 ![자산 탭](assets/asset-tab.png)
 
 1. 필수. AEM에서 Veeva로 속성을 매핑합니다.
-a. AEM 속성 이름. AEM 속성에서 선택할 수 있습니다. (예: `/jcr:content/metadata/jcr:title`) `{name}`을(를) 템플릿화할 수 있습니다.
-b. 정확히 ( )에 입력한 Veeva 속성 이름이 Veeva에 존재합니다. (예: `name__v`)
+a. AEM 속성 이름입니다. AEM 속성에서 선택할 수 있습니다. (예: `/jcr:content/metadata/jcr:title`) `{name}`을(를) 템플릿화할 수 있습니다.
+b. 에 정확히 입력한 Veeva 속성 이름이 Veeva에 존재합니다. (e.g. `name__v`)
 c. 속성 유형. `Text` 또는 `Multiline Text`입니다.
 
 2. 필수. Veeva에서 AEM으로 속성을 매핑합니다.
-a. 정확히 ( )에 입력한 Veeva 속성 이름이 Veeva에 존재합니다. (예: `name__v`)
-b. AEM 속성 이름. AEM 속성에서 선택할 수 있습니다. (예: `/jcr:content/metadata/jcr:title`)
+a. 에 정확히 입력한 Veeva 속성 이름이 Veeva에 존재합니다. (e.g. `name__v`)
+b. AEM 속성 이름입니다. AEM 속성에서 선택할 수 있습니다. (e.g. `/jcr:content/metadata/jcr:title`)
 c. 속성 유형. `Text` 또는 `Multiline Text`입니다.
 
 ### 추가 설정
@@ -256,12 +257,12 @@ PDF/이미지를 생성하는 동안 AEM에서 페이지를 가져오려면 AEM 
 
 AEM 6.5.5+를 사용하는 경우:
 
-* [AEM에서 사용자 만들기](https://experienceleague.adobe.com/docs/experience-manager-65/forms/administrator-help/setup-organize-users/adding-configuring-users.html?lang=ko&#create-a-user)
-* [AEM에서 사용자에게 권한을 추가](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html?lang=ko&#permissions-in-aem)
+* [AEM에서 사용자 만들기](https://experienceleague.adobe.com/docs/experience-manager-65/forms/administrator-help/setup-organize-users/adding-configuring-users.html?#create-a-user)
+* [AEM에서 사용자에게 권한 추가](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html?#permissions-in-aem)
 
 AEM 클라우드 서비스를 사용하는 경우:
 
-* [AEM Cloud Services를 사용하여 사용자 관리](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/aem-users-groups-and-permissions.html?lang=ko&#accessing)
+* [AEM Cloud Services를 사용하여 사용자 관리](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/aem-users-groups-and-permissions.html?#accessing)
 
 PDF/이미지로 변환되고 Veeva로 푸시될 컨텐츠에 대한 AEM 서비스 사용자에게 다음 권한이 필요합니다.
 

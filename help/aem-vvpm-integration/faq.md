@@ -2,13 +2,14 @@
 title: Veeva Vault 통합 FAQ
 description: Veeva Vault 통합 FAQ
 exl-id: c308ebb3-7881-4094-9f35-c67a96fb5ab1
-source-git-commit: b024e4295b5b37030c1524342832400c279c650a
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+source-git-commit: 02aa1622ee171cd56ec9cdeb6bdef04b5d5464b5
 workflow-type: tm+mt
-source-wordcount: '322'
+source-wordcount: '354'
 ht-degree: 1%
-
 ---
-
 # 자주 묻는 질문
 
 **Veeva에 동기화할 메타데이터는 무엇입니까?**

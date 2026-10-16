@@ -3,18 +3,17 @@ product: adobe experience manager
 solution: Experience Manager
 product_v2:
   - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: "Experience Manager"
 usetq: true
 description: 컨설팅 Experience Manager 설명서
 type: Documentation
-git-repo: https://github.com/AdobeDocs/adobe-consulting-services.ko-KR
+git-repo: https://github.com/AdobeDocs/adobe-consulting-services.en
 index: true
 source-git-commit: e0159a3db7c79d12ee150be018ee5d005975b95a
 workflow-type: tm+mt
-source-wordcount: 94
+source-wordcount: '88'
 ht-degree: 2%
-
 ---
-
 
 # 내부 사용을 위한 메타데이터
 
